@@ -1,0 +1,21 @@
+<html>
+<script>
+function getNumberOfDays(start, end) {
+    const date1 = new Date(start);
+    const date2 = new Date(end);
+
+    const oneDay = 1000 * 60 * 60 * 24;
+
+    const diffInTime = date2.getTime() - date1.getTime();
+
+    const diffInDays = Math.round(diffInTime / oneDay);
+
+    return diffInDays;
+}
+
+alert(getNumberOfDays(new Date(),"9/8/2022")+' days left');
+</script>
+</html>
+
+
+
